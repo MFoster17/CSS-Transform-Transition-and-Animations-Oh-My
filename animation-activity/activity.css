@@ -27,24 +27,31 @@ nav {
   opacity: 1;
 }
 
-
-
 @keyframes top {
- 40% {transform: translateY(40px) translateX(-2px) rotate(60deg);}
- 70% { opacity: 30%;}
- 
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg) translateY(24px) translateX(20px);
+
+  }
 }
 
 @keyframes middle {
-10% {opacity: 80%;}
-40% {opacity: 65%;}
-65% {opacity: 50%;}
-85% {opacity: 35%;}
-100% {opacity: 0%;}
+  from {
+    background-color: inherit;
+  }
+  to {
+    background-color: mediumvioletred;
+  }
 }
 
 @keyframes bottom {
-40% {transform: translateY(-32px) translateX(3px)  rotate(-60deg);}
-70% { opacity: 30%;}
-}
+  from {
+    transform: rotate(0deg);
 
+  }
+  to {
+    transform: rotate(-45deg) translateY(-24px) translateX(24px);
+  }
+}
